@@ -1,0 +1,43 @@
+@reference "../app/globals.css";
+
+.bean-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8;
+}
+
+.bean-skeleton {
+  @apply bg-white rounded-xl border border-stone-200 overflow-hidden
+         hover:border-stone-400 transition-colors duration-200
+         animate-pulse;
+}
+
+.bean-skeleton-image {
+  @apply aspect-square bg-stone-200;
+}
+
+.bean-skeleton-body {
+  @apply p-4;
+}
+
+.bean-skeleton-title {
+  @apply h-6 bg-stone-200 rounded mb-2;
+}
+
+.bean-skeleton-meta {
+  @apply h-4 bg-stone-100 rounded mb-2 w-2/3;
+}
+
+.bean-skeleton-desc {
+  @apply h-16 bg-stone-100 rounded;
+}
+
+.bean-list-empty {
+  @apply text-center py-12;
+}
+
+.bean-list-empty-title {
+  @apply text-lg font-semibold text-stone-800 mb-2;
+}
+
+.bean-list-empty-text {
+  @apply text-stone-500;
+}

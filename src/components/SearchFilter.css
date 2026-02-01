@@ -1,0 +1,52 @@
+@reference "../app/globals.css";
+
+.filter-wrapper {
+  @apply mb-8;
+}
+
+.filter-row {
+  @apply flex flex-col md:flex-row gap-4 items-end;
+}
+
+.filter-search-wrapper {
+  @apply w-full md:flex-1;
+}
+
+.filter-label {
+  @apply block text-sm font-medium text-stone-500 mb-1;
+}
+
+.filter-search-input-wrapper {
+  @apply relative;
+}
+
+.filter-search-input {
+  @apply w-full px-4 py-2 border border-stone-300 rounded-lg
+         focus:outline-none focus:ring-2 focus:ring-stone-400 focus:border-transparent
+         bg-white placeholder-stone-400 text-stone-900 pl-10;
+}
+
+.filter-search-icon {
+  @apply absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400;
+}
+
+.filter-select-wrapper {
+  @apply w-full md:w-48;
+}
+
+.filter-select {
+  @apply w-full px-4 py-2 border border-stone-300 rounded-lg
+         focus:outline-none focus:ring-2 focus:ring-stone-400 focus:border-transparent
+         bg-white placeholder-stone-400 text-stone-900;
+}
+
+.filter-clear-wrapper {
+  @apply w-full md:w-auto flex items-end;
+}
+
+.filter-clear-btn {
+  @apply bg-transparent text-stone-800 px-6 py-2.5 rounded-full font-medium border border-stone-300
+         hover:border-stone-500 transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2
+         text-sm w-full md:w-auto disabled:opacity-40 disabled:cursor-not-allowed;
+}

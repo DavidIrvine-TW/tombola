@@ -1,0 +1,100 @@
+@reference "../app/globals.css";
+
+.order-overlay {
+  @apply fixed inset-0 bg-black/30 flex items-center justify-center p-4 z-50;
+}
+
+.order-dialog {
+  @apply bg-white rounded-2xl max-w-md w-full border border-stone-200;
+}
+
+.order-header {
+  @apply p-6 border-b border-stone-200;
+}
+
+.order-header-inner {
+  @apply flex items-center justify-between;
+}
+
+.order-title {
+  @apply text-2xl font-bold text-stone-900 font-[family-name:var(--font-heading)];
+}
+
+.order-close-btn {
+  @apply text-stone-400 hover:text-stone-600 transition-colors;
+}
+
+.order-close-icon {
+  @apply w-6 h-6;
+}
+
+.order-form {
+  @apply p-6;
+}
+
+.order-bean-summary {
+  @apply flex items-center gap-4 mb-6 p-4 bg-stone-50 rounded-lg;
+}
+
+.order-bean-image {
+  @apply w-16 h-16 object-cover rounded-lg;
+}
+
+.order-bean-name {
+  @apply font-semibold text-stone-900;
+}
+
+.order-bean-price {
+  @apply text-stone-500 text-sm;
+}
+
+.order-error {
+  @apply mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm;
+}
+
+.order-fields {
+  @apply space-y-4;
+}
+
+.order-label {
+  @apply block text-sm font-medium text-stone-500 mb-1;
+}
+
+.order-total-wrapper {
+  @apply mt-6 p-4 bg-stone-50 rounded-lg;
+}
+
+.order-total-inner {
+  @apply flex justify-between items-center;
+}
+
+.order-total-label {
+  @apply text-stone-500 font-medium;
+}
+
+.order-total-amount {
+  @apply text-2xl font-bold text-stone-900;
+}
+
+.order-input {
+  @apply w-full px-4 py-2 border border-stone-300 rounded-lg
+         focus:outline-none focus:ring-2 focus:ring-stone-400 focus:border-transparent
+         bg-white placeholder-stone-400 text-stone-900;
+}
+
+.order-actions {
+  @apply mt-6 flex gap-4;
+}
+
+.order-cancel-btn {
+  @apply bg-transparent text-stone-800 px-6 py-2.5 rounded-full text-sm font-medium border border-stone-300
+         hover:border-stone-500 transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-stone-400 focus:ring-offset-2;
+}
+
+.order-submit-btn {
+  @apply bg-stone-800 text-white px-6 py-2.5 rounded-full text-sm font-medium uppercase tracking-wide
+         hover:bg-stone-900 transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-stone-500 focus:ring-offset-2
+         flex-1 disabled:opacity-50 disabled:cursor-not-allowed;
+}

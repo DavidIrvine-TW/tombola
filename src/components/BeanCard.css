@@ -1,0 +1,47 @@
+@reference "../app/globals.css";
+
+.bean-card {
+  @apply bg-white rounded-xl border border-stone-200 overflow-hidden
+         hover:border-stone-400 transition-colors duration-200
+         cursor-pointer;
+}
+
+.bean-card-image-wrapper {
+  @apply aspect-square overflow-hidden relative;
+}
+
+.bean-card-image {
+  @apply object-cover group-hover:scale-105 transition-transform duration-300;
+}
+
+.bean-card-body {
+  @apply p-4;
+}
+
+.bean-card-header {
+  @apply flex items-start justify-between gap-2 mb-2;
+}
+
+.bean-card-name {
+  @apply font-semibold text-lg text-stone-900 line-clamp-1;
+}
+
+.bean-card-price {
+  @apply text-stone-900 font-bold whitespace-nowrap;
+}
+
+.bean-card-meta {
+  @apply flex items-center gap-2 mb-2;
+}
+
+.bean-card-badge {
+  @apply px-2 py-0.5 rounded-full text-xs font-medium;
+}
+
+.bean-card-country {
+  @apply text-stone-500 text-sm;
+}
+
+.bean-card-description {
+  @apply text-stone-500 text-sm line-clamp-2;
+}
