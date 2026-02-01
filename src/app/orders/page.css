@@ -1,0 +1,149 @@
+@reference "../globals.css";
+
+.orders-loading {
+  @apply space-y-4;
+}
+
+.orders-heading {
+  @apply text-2xl font-bold font-[family-name:var(--font-heading)] text-stone-900;
+}
+
+.skeleton-list {
+  @apply space-y-3;
+}
+
+.skeleton-row {
+  @apply h-16 bg-stone-100 rounded-lg animate-pulse;
+}
+
+.orders-empty {
+  @apply text-center py-16;
+}
+
+.orders-empty-heading {
+  @apply text-2xl font-bold font-[family-name:var(--font-heading)] text-stone-900 mb-2;
+}
+
+.orders-empty-text {
+  @apply text-stone-500;
+}
+
+.orders-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.clear-all-btn {
+  @apply text-sm px-4 py-2 rounded-lg border border-stone-300 text-stone-600 hover:bg-stone-100 transition-colors;
+}
+
+.confirm-overlay {
+  @apply fixed inset-0 bg-black/30 flex items-center justify-center p-4 z-50;
+}
+
+.confirm-dialog {
+  @apply bg-white rounded-2xl max-w-sm w-full p-6 border border-stone-200;
+}
+
+.confirm-title {
+  @apply text-lg font-bold text-stone-900 mb-2;
+}
+
+.confirm-message {
+  @apply text-sm text-stone-500 mb-6;
+}
+
+.confirm-actions {
+  @apply flex gap-3 justify-end;
+}
+
+.confirm-cancel-btn {
+  @apply px-4 py-2 text-sm rounded-lg border border-stone-300 text-stone-600 hover:bg-stone-100 transition-colors;
+}
+
+.confirm-delete-btn {
+  @apply px-4 py-2 text-sm rounded-lg bg-red-600 text-white hover:bg-red-700 transition-colors;
+}
+
+.orders-table-wrapper {
+  @apply hidden md:block overflow-x-auto;
+}
+
+.orders-table {
+  @apply w-full text-sm text-left;
+}
+
+.orders-table-head {
+  @apply text-xs uppercase text-stone-500 border-b border-stone-200;
+}
+
+.orders-th {
+  @apply py-3 px-4;
+}
+
+.orders-th-right {
+  @apply py-3 px-4 text-right;
+}
+
+.orders-tr {
+  @apply border-b border-stone-100 hover:bg-stone-50;
+}
+
+.orders-td {
+  @apply py-3 px-4 text-stone-700;
+}
+
+.orders-td-id {
+  @apply py-3 px-4 font-medium text-stone-900;
+}
+
+.orders-td-email {
+  @apply py-3 px-4 text-stone-500;
+}
+
+.orders-td-right {
+  @apply py-3 px-4 text-right text-stone-700;
+}
+
+.orders-td-total {
+  @apply py-3 px-4 text-right font-medium text-stone-900;
+}
+
+.orders-td-date {
+  @apply py-3 px-4 text-stone-500;
+}
+
+.orders-cards {
+  @apply md:hidden space-y-3;
+}
+
+.order-card {
+  @apply bg-white border border-stone-200 rounded-lg p-4 space-y-2;
+}
+
+.order-card-header {
+  @apply flex justify-between items-start;
+}
+
+.order-card-id {
+  @apply font-medium text-stone-900;
+}
+
+.order-card-total {
+  @apply font-medium text-stone-900;
+}
+
+.order-card-bean {
+  @apply text-sm text-stone-700;
+}
+
+.order-card-name {
+  @apply text-sm text-stone-600;
+}
+
+.order-card-email {
+  @apply text-xs text-stone-400;
+}
+
+.order-card-date {
+  @apply text-xs text-stone-400;
+}

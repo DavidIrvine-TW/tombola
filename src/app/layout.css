@@ -1,0 +1,41 @@
+@reference "./globals.css";
+
+.layout-body {
+  @apply min-h-screen flex flex-col;
+}
+
+.site-header {
+  @apply bg-white border-b border-stone-200;
+}
+
+.header-container {
+  @apply max-w-7xl mx-auto px-4 py-4;
+}
+
+.header-inner {
+  @apply flex items-center justify-between;
+}
+
+.site-logo {
+  @apply text-xl font-bold tracking-tight font-[family-name:var(--font-heading)] text-stone-900 hover:text-stone-700 transition-colors;
+}
+
+.site-nav {
+  @apply flex gap-6 text-sm font-medium text-stone-500;
+}
+
+.nav-link {
+  @apply hover:text-stone-900 transition-colors;
+}
+
+.site-main {
+  @apply flex-1 max-w-7xl mx-auto px-4 py-8 w-full;
+}
+
+.site-footer {
+  @apply bg-stone-100 border-t border-stone-200 mt-16;
+}
+
+.footer-container {
+  @apply max-w-7xl mx-auto px-4 py-4 text-center text-sm text-stone-500;
+}
