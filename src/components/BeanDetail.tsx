@@ -26,7 +26,7 @@ export function BeanDetail({ bean, onClose, onOrder }: BeanDetailProps) {
       <div className="detail-dialog">
 
         <div className="relative">
-          <Image src={bean.image} alt={bean.name} width={672} height={256} unoptimized className="detail-image" />
+          <Image src={bean.image} alt={bean.name} width={672} height={256} className="detail-image" />
 
           <button
             onClick={onClose}

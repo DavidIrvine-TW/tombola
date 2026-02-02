@@ -2,7 +2,7 @@
 
 .bean-card {
   @apply bg-white rounded-xl border border-stone-200 overflow-hidden
-         hover:border-stone-400 transition-colors duration-200
+         hover:border-amber-600 hover:shadow-lg transition-all duration-200
          cursor-pointer;
 }
 
