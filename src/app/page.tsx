@@ -48,7 +48,8 @@ export default function Home() {
   }, [filters]);
 
   useEffect(() => {
-    fetchBeans();
+    const timeout = setTimeout(fetchBeans, 300);
+    return () => clearTimeout(timeout);
   }, [fetchBeans]);
 
   const handleViewDetails = (bean: Bean) => setModal({ type: 'detail', bean });
