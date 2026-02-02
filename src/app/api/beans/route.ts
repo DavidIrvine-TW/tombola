@@ -34,7 +34,7 @@ export async function GET(request: NextRequest) {
     // The % wildcards make it a "contains" search (matches anywhere in the string)
     if (search) {
       conditions.push(
-        sql`(${beans.name} LIKE ${'%' + search + '%'} OR ${beans.description} LIKE ${'%' + search + '%'} OR ${beans.country} LIKE ${'%' + search + '%'})`
+        sql`(LOWER(${beans.name}) LIKE LOWER(${'%' + search + '%'}) OR LOWER(${beans.description}) LIKE LOWER(${'%' + search + '%'}) OR LOWER(${beans.country}) LIKE LOWER(${'%' + search + '%'}))`
       );
     }
 
